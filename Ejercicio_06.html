@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<style type="text/css">
+	<style media="screen">
 		body{
 			margin: 0px;
 		}
@@ -14,7 +14,6 @@
 			height: 20%;
 			width: 100%;
 			background-color: green;
-
 		}
 		.texto{
 			margin: 5%;
@@ -22,16 +21,23 @@
 			text-align: center;
 		}
 		.row{
-        clear: both;
-      }	
+        	clear: both;
+      	}	
 		.cell{
-		float: left;
-        width: 33%;
-        padding: 5%;
-        box-sizing: border-box;
+			float: left;
+	        width: 33%;
+	        padding: 5%;
+	        box-sizing: border-box;
 		}
 		.img_r{
 			width: 100%;
+		}
+		@media	(max-width: 480px){
+			.min-cell{
+	        width: 100%;
+	        padding: 5%;
+	        box-sizing: border-box;
+			}
 		}
 
 	</style>
@@ -42,21 +48,21 @@
 		<h1 class="texto">HOLA!!!<br>ESTE	ES UN EJERCICIO DE GRILLAS</h1>
 	</div>
 	<div class="row">
-		<div class="cell">
+		<div class="min-cell cell">
 			<img src="avengers.png" class="img_r">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
 		</div>
-		<div class="cell">
+		<div class="min-cell cell">
 			<img src="avengers.png"  class="img_r">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
 		</div>
-		<div class="cell">
+		<div class="min-cell cell">
 			<img src="avengers.png" class="img_r">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
